@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета питомца</title>
+</head>
+
+
+<body>
+    <form action="script.php" method="GET" >
+        <fieldset>
+        <p>
+        <label for="catname">Кличка питомца</label>
+        <input type="text" name="catname" id="catname" value=""/> 
+        </p>
+
+    <p>
+        <label for="name">Имя владельца</label> 
+        <input type="text" name="name" id="name" value=""/> 
+
+</p>
+        <p>
+            <label for="number">Контакты владельца</label> 
+            <input type="text" name="number" id="number" value=""/>
+    
+        </p>
+    </fieldset>
+    <p>
+        <label for="name">Порода питомца:</label> </p>
+
+        <select id="selecttheme">
+        <option>Другая</option>
+        <option>Мейн-кун</option>
+        <option>Британская короткошерстная</option>
+        <option>Ангора</option>
+        <option>Сиамская</option>
+        <option>Бенгальская</option>
+        <option>Сфинкс</option>
+        <option>Метис</option>
+        
+    </select>
+
+
+    <p>  <label for="name">Чем питается:</label>  </p> 
+    
+    <p>  <input type="checkbox" name="food" value="1" id="1" />
+        <label for="1">Сухой корм</label> </p>
+        <p> <input type="checkbox" name="food" value="2" id="2" />
+        <label for="2">Влажный корм</label>  </p> 
+        <p>  <input type="checkbox" name="food" value="3" id="3" />
+        <label for="3">Натуральный корм</label>  </p> 
+        <p>   <input type="checkbox" name="food" value="4" id="4" />
+        <label for="4">Другое</label>  </p> 
+  
+   
+
+    <p>Пол питомца:</p> 
+    <input type="radio" name="sex" value="male" id="he" />
+    <label for="he">Самец</label> 
+    <input type="radio" name="sex" value="female" id="she" />
+    <label for="she">Самка</label> 
+    
+<p><label for="comments">Комментарий:</label> </p>
+    <textarea name="comments" id="comments" rows="5" cols="40">Расскажи нам еще что-нибудь...</textarea> 
+
+    <p><label for="comments">Фото питомца:</label> </p>
+    <input type="file">     
+    
+    <p>
+        <button>Сохранить</button>
+    </P>
+        </form>
+        </body>
+        </html>
