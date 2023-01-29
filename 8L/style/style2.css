@@ -1,0 +1,145 @@
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+display: grid;
+grid-template-columns: 1fr 65% 1fr;
+grid-template-rows: 1fr;
+}
+
+.header__logo {
+display: flex;
+justify-content: end; 
+}
+
+.header__text {
+display: flex;
+justify-content: start;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header__button {
+display: flex;
+background-image: url('../assets/images/bg.svg');
+width: 115px;
+height: 38px;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: white;
+font-size: 13px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header__button:hover {
+text-decoration:underline;
+}
+
+.main {
+display: flex;  
+}
+
+.main__title {
+font-size: 50px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+padding-left: 250px;
+}
+
+.main__text {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 28px;
+padding-bottom: 50px;
+padding-left: 250px;
+}
+
+.main__container {
+display: flex;
+flex-direction: column;
+width: 40%; 
+}
+
+.aside {
+display: flex;
+justify-content: end;
+width: 60%;
+}
+
+.aside__image {
+padding-right: 150px;
+}
+
+.main__button {
+display: flex;
+background-image: url('assets/images/bg.svg');
+width: 115px;
+height: 38px;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 18px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-decoration: none;
+margin-left: 300px;
+margin-right: 300px;  
+}
+
+.main__button:hover {
+text-decoration: underline;
+}
+
+.footer__nav-list {
+display: flex;
+justify-content: space-between;
+width: 50%;
+padding-left: 250px;
+padding-bottom: 50px;
+}
+
+.nav-list__item {
+text-decoration: none;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgb(111, 59, 232);
+}
+
+@media screen and (max-width: 1300px) {
+
+.aside__image {
+width: 70%;
+}
+
+.nav__list__item {
+font-size: 15px;
+}
+
+.main__title {
+padding-left: 60px;
+}
+    
+.main__text {
+padding-left: 60px;
+}
+    
+.aside__image {
+padding-right: 60px;
+}
+    
+.main__button {
+margin-left: 60px;
+margin-right: 60px;    
+}
+
+.footer__nav-list {
+width: 90%;
+padding-left: 60px;
+padding-right: 20px;
+}
+.nav-list__item {
+font-size: 10px;
+}
+}
+

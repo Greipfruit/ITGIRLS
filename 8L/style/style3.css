@@ -1,0 +1,248 @@
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .header {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 1fr;
+    }
+    
+    .header__logo {
+    display: flex;
+    justify-content: end; 
+    }
+    
+    .header__text {
+    display: flex;
+    justify-content: start;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .header__button {
+    display: flex;
+    background-image: url('../assets/images/bg.svg');
+    width: 115px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .header__button:hover {
+    text-decoration:underline;
+    }
+
+    .main__container {
+    display: grid;  
+    width: 90%;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 60px;
+ 
+    }
+
+       .main__title  {
+       padding-left: 170px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 50px;
+       font-weight: 1000;
+        }
+
+       .main__container-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        justify-items: center;
+        align-items: center;
+        width: 440px;
+        height: 550px;
+        }
+           
+       .main__container-2  {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        width: 440px;
+        height: 550px;
+        }
+    
+        .main__container-3 {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        width: 440px;
+        height: 550px;
+        }
+    
+        .main__container-4 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        width: 440px;
+        height: 350px;
+        }
+           
+        .main__container-5 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        width: 440px;
+        height: 350px;
+        }
+           
+        .main__container-6 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        width: 440px;
+        height: 350px;
+        background-image: url(../assets/images/VR_Colors/Rectangle\ 12.svg);
+        }
+    
+        .main__container-1__title {
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .main__container-2__title {
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .main__container-3__title {
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .main__container-4__title {
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .main__container-5__title {
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .main__container-6__title {
+        font-size: 40px;
+        font-weight: bold;
+        color: white;   
+        }
+
+        .nav__list {
+        display: flex;
+        margin-right: 1000px;
+        padding-top: 300px;
+        justify-content: space-around;   
+        }
+                
+        .main__container-6__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(242, 242, 243);
+        background-image: url(../assets/images/bg.svg);
+        width: 115px;
+        height: 36px;
+        }
+
+        .footer {
+        display: inline;
+        width: 70%; 
+        }
+
+        .footer__nav-list {
+        display: flex;
+        margin-right: 1000px;
+        margin-left: 50px;
+        padding-top: 300px;
+        justify-content: space-around;
+        }
+            
+        .nav-list__item {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(5, 4, 8);
+        }
+
+            @media screen and (max-width: 1200px) {
+               
+            .main__container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            .main__container-3 {
+            grid-row: 3/4;
+            grid-column: 1/2;
+            }
+
+            .main__container-6 {
+            grid-row: 3/4;
+            grid-column: 2/3;
+            }
+
+            .footer__nav-list {
+            margin-right: 80px;
+            margin-top: 550px;
+            }
+            }
+
+            @media screen and (max-width: 900px) {
+
+            .header {
+            grid-template-columns: 1fr 60% 1fr;
+            }
+            
+            .footer__nav-list {
+            margin-right: 100px;
+            }
+            
+            .main__container {
+            display: flex; 
+            flex-direction: column; 
+            }
+
+            .footer__nav-list {
+            margin-top: 1550px;
+            }
+            }

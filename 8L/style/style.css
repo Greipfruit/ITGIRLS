@@ -1,0 +1,70 @@
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+display: inline-flex;
+color: white;
+font-size: 20px;
+width: 100%;
+justify-content: space-around;
+padding: 10px ;   
+}
+
+.navbar__item {
+text-decoration: none;
+color: rgb(193, 186, 186);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar__item:hover {
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.container {
+margin: 20px;
+}
+
+.main__start {
+height: 350px;
+background-color: rgb(237, 233, 233);
+padding-left: 40px;
+padding-top: 80px;
+}
+
+.card {
+width: 23%;
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+margin: 20px;
+}
+
+.footer {
+color: white;
+height: 80px;
+padding: 20px;
+}
+
+@media screen and (max-width: 760px) {
+
+.header {
+font-size: 1em;
+justify-content: center;
+}
+
+.container {
+width: 90%;
+}
+
+.card {
+width: 100%;
+margin: 20px;
+}
+    
+}
